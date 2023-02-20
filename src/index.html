@@ -4,9 +4,19 @@
 @include('partials/head.html')
 
 <body class="page__body">
-  <div class="site-container">
+  <div class="page__wrapper">
     @include('partials/header.html')
     <main class="main">
+      <div class="main__wrapper">
+          <h1 class="main-title visually-hidden">Main Site - the most popular decision.</h1>
+          @include('partials/intro.html')
+          @include('partials/partners.html')
+          @include('partials/features.html')
+          @include('partials/tagline.html')
+          @include('partials/metrics.html')
+          @include('partials/stories.html')
+          @include('partials/plan.html')
+      </div>
     </main>
     @include('partials/footer.html')
   </div>
